@@ -8,6 +8,9 @@ RESULTS="${TENDERMINT_TEST}/test_race_files"
 export GORACE="history_size=7"
 export GO111MODULE="on"
 
+cd ${AUTONITY}
+pwd
+
 if [ ! -d ${RESULTS} ]; then
   mkdir ${RESULTS}
 fi
