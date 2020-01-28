@@ -51,5 +51,5 @@ go test ${TENDERMINT_TEST}/... -run=TestCheckBlockWithSmallFee               -v 
 echo "Running TestCheckFeeRedirectionAndRedistribution with race flag..."
 go test ${TENDERMINT_TEST}/... -run=TestCheckFeeRedirectionAndRedistribution -v -race -timeout=120m >  ${RESULTS}/check-fee-redirection-and-redistribution-race.txt
 
-echo "Running Tendermint Tests"
+echo "Running Tendermint Tests.."
 go test ${TENDERMINT_TEST}/... -v -timeout=120m > ${RESULTS}/tendermint-test.txt
