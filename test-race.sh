@@ -16,4 +16,4 @@ if [ ! -d ${RESULTS} ]; then
 fi
 
 echo "Running Tendermint Tests... writing to tendermint-test-race.txt"
-go test ${TENDERMINT_TEST}/... -v -race -timeout=200m > ${RESULTS}/tendermint-test-race.txt
+go test ${TENDERMINT_TEST}/... -v -race -timeout=600m > ${RESULTS}/tendermint-test-race.txt
